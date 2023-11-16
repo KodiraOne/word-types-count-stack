@@ -21,6 +21,11 @@ export class ReactLambdaAppStack extends cdk.Stack {
     // Add lambda function url
     const fnUrl = lambdaFunction.addFunctionUrl({
       authType: lambda.FunctionUrlAuthType.NONE,
+      cors: {
+        allowedOrigins: ['*'],
+        allowedHeaders: ['*'],
+        allowedMethods: [lambda.HttpMethod.ALL]
+      },
     });
 
     // create S3 bucket for hosting react app as static website
