@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project
+# How to get started
 
-This is a blank project for CDK development with TypeScript.
+Set AWS IAM credentials in environment variables for the account where you will deploy app. Please make sure this user has all necessery rights
+export AWS_ACCESS_KEY_ID={id}
+export AWS_SECRET_ACCESS_KEY={secret}
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Bootstrap AWS CDK
+cdk bootstrap aws://ACCOUNT-NUMBER/REGION
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+Run the script to deploy the app
+./run.sh

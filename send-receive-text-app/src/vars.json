@@ -1,0 +1,6 @@
+{
+  "ReactLambdaAppStack": {
+    "LambdaServiceUrl": "https://5gbxcjl3u34ynxmjenunjtoh4y0kftct.lambda-url.eu-west-1.on.aws/",
+    "ReactAppBucket": "reactlambdaappstack-countwordtypesf31bdeca-n6wqhwg8wavv"
+  }
+}
